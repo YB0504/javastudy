@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class operater {
+public class operator {
     public static void main(String[] args) {
         // 부호 연산자(-)
         int i = -10;
