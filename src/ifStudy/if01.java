@@ -10,5 +10,8 @@ public class if01 {
         if (score > 60) {
             System.out.println("합격");
         }
+
+        // if문 내부의 문장이 하나인 경우 {}가 생략되기도 한다.
+        if (score >=70) System.out.println("70이상 합격");
     }
 }
