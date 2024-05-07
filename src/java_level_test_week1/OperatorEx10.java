@@ -1,4 +1,4 @@
-package java_level_test;
+package java_level_test_week1;
 
 public class OperatorEx10 {
     public static void main(String[] args) {
