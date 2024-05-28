@@ -24,6 +24,8 @@ public class ArrayListEx {
         Collections.sort(list2);
         print(list1, list2);
 
+        // containsAll() : 지정된 객체 또는 Collection의 객체 들이 Collection에 포함 되어 있는지 확인 한다.
+        // Collection Interface에 있는 메소드
         System.out.println("list1.containsAll(list2) : " + list1.containsAll(list2));
 
         list2.add("B");
@@ -34,6 +36,9 @@ public class ArrayListEx {
         list2.set(3, "AA");
         print(list1, list2);
 
+        // retainAll() : ArrayList에 저장된 객체 중에서 주어진 컬렉션과
+        //               공통된 것들만을 남기고 나머지는 삭제한다.
+        // ArrayList 내부 메소드
         System.out.println("list1.retainAll(list2) : " + list1.retainAll(list2));
         print(list1, list2);
 
