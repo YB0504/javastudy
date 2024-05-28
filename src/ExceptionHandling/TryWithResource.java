@@ -1,4 +1,4 @@
-package Exercise;
+package ExceptionHandling;
 
 import java.io.FileWriter;
 import java.io.IOException;
