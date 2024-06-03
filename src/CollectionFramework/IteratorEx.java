@@ -14,8 +14,13 @@ public class IteratorEx {
 
         Iterator iterator = list.iterator();
 
-        while (iterator.hasNext()) {
-            Object o = iterator.next();
+//        while (iterator.hasNext()) {
+//            Object o = iterator.next();
+//            System.out.println(o);
+//        }
+
+        for (int i = 0; i < list.size(); i++) {
+            Object o = list.get(i);
             System.out.println(o);
         }
     }
