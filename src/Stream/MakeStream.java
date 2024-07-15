@@ -21,7 +21,8 @@ public class MakeStream {
                 .build();
 
         // 기본 타입 스트림
-        IntStream intStream = IntStream.range(1, 5);
+        IntStream intStream1 = IntStream.range(1, 5);
+        IntStream intStream2 = IntStream.rangeClosed(1, 5);
 
         // 병렬 스트림
         Stream<String> parallelStream = list.parallelStream();
@@ -32,7 +33,9 @@ public class MakeStream {
         System.out.println();
         builderStream.forEach(System.out::print);
         System.out.println();
-        intStream.forEach(System.out::print);
+        intStream1.forEach(System.out::print);
+        System.out.println();
+        intStream2.forEach(System.out::print);
         System.out.println();
         parallelStream.forEach(System.out::print);
     }

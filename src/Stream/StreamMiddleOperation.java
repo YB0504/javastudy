@@ -24,6 +24,12 @@ public class StreamMiddleOperation {
         System.out.print("\nMapping Stream : ");
         mappingStream.forEach(System.out::print);
 
+        List<String> intList = Arrays.asList("1", "2", "3", "4", "5");
+        Stream<Integer> mappingIntStream = intList.stream()
+                .map(Integer::parseInt);
+        System.out.print("\nMapping Stream ParsrInt : ");
+        mappingIntStream.forEach(System.out::print);
+
         // Sorting
         // 스트림 내 요소들을 정렬하는 작업
         // Comparator 사용
