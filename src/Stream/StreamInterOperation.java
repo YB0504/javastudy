@@ -5,7 +5,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Stream;
 
-public class StreamMiddleOperation {
+public class StreamInterOperation {
     public static void main(String[] args) {
         // Filter
         // 스트림 내 요소를 하나씩 평가하여 걸러내는 if문 역할 작업
