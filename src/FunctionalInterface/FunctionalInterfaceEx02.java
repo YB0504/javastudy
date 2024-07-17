@@ -5,20 +5,20 @@ import java.util.function.*;
 public class FunctionalInterfaceEx02 {
     public static void main(String[] args) {
 
-        // T °´Ã¼¸¦ ¸®ÅÏÇÏ´Â ÇÔ¼ö
+        // T ê°ì²´ë¥¼ ë¦¬í„´í•˜ëŠ” í•¨ìˆ˜
         Supplier<Object> supplier = () -> new Object();
         System.out.println(supplier.get());
 
-        // Boolean °ªÀ» ¸®ÅÏÇÏ´Â ÇÔ¼ö
+        // Boolean ê°’ì„ ë¦¬í„´í•˜ëŠ” í•¨ìˆ˜
         BooleanSupplier booleanSupplier = () -> true;
         System.out.println(booleanSupplier.getAsBoolean());
 
-        // Int °ªÀ» ¸®ÅÏÇÏ´Â ÇÔ¼ö
+        // Int ê°’ì„ ë¦¬í„´í•˜ëŠ” í•¨ìˆ˜
         IntSupplier intSupplier = () -> {
             int num = (int) (Math.random() * 6) + 1;
             return num;
         };
-        System.out.println("·£´ı ÁÖ»çÀ§ : " + intSupplier.getAsInt());
+        System.out.println("ëœë¤ ì£¼ì‚¬ìœ„ : " + intSupplier.getAsInt());
 
         // Double
         DoubleSupplier doubleSupplier = () -> 1.0;

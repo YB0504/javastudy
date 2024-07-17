@@ -5,24 +5,24 @@ import java.util.function.*;
 public class FunctionalInterfaceEx01 {
     public static void main(String[] args) {
 
-        // °´Ã¼ T¸¦ ¹Ş¾Æ Ãâ·ÂÇÏ´Â ÇÔ¼ö
-        Consumer<String> c1 = t -> System.out.println("ÀÔ·Â°ª : " + t);
-        c1.accept("È«±æµ¿");
+        // ê°ì²´ Të¥¼ ë°›ì•„ ì¶œë ¥í•˜ëŠ” í•¨ìˆ˜
+        Consumer<String> c1 = t -> System.out.println("ì…ë ¥ê°’ : " + t);
+        c1.accept("í™ê¸¸ë™");
 
-        // °´Ã¼ T¿Í U¸¦ ¹Ş¾Æ Ãâ·ÂÇÏ´Â ÇÔ¼ö
-        BiConsumer<String, Integer> c2 = (a, b) -> System.out.println("ÀÔ·Â°ª1 : " + a + ", ÀÔ·Â°ª2 : " + b);
-        c2.accept("È«±æµ¿", 100);
+        // ê°ì²´ Tì™€ Uë¥¼ ë°›ì•„ ì¶œë ¥í•˜ëŠ” í•¨ìˆ˜
+        BiConsumer<String, Integer> c2 = (a, b) -> System.out.println("ì…ë ¥ê°’1 : " + a + ", ì…ë ¥ê°’2 : " + b);
+        c2.accept("í™ê¸¸ë™", 100);
 
-        // int °ªÀ» ¹Ş¾Æ Ãâ·ÂÇÏ´Â ÇÔ¼ö
-        IntConsumer c3 = a -> System.out.println("ÀÔ·Â°ª : " + a);
+        // int ê°’ì„ ë°›ì•„ ì¶œë ¥í•˜ëŠ” í•¨ìˆ˜
+        IntConsumer c3 = a -> System.out.println("ì…ë ¥ê°’ : " + a);
         c3.accept(100);
 
         // double
-        DoubleConsumer c4 = a -> System.out.println("ÀÔ·Â°ª : " + a);
+        DoubleConsumer c4 = a -> System.out.println("ì…ë ¥ê°’ : " + a);
         c4.accept(100.1);
 
         // long
-        LongConsumer c5 = a -> System.out.println("ÀÔ·Â°ª : " + a);
+        LongConsumer c5 = a -> System.out.println("ì…ë ¥ê°’ : " + a);
         c5.accept(2100000000);
     }
 }
