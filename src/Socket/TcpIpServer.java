@@ -27,6 +27,7 @@ public class TcpIpServer {
                 // 서버 소켓은 클라이언트의 연결 요청이 올 때까지 실행을 멈추고 대기
                 // 연결 요청이 오면 클라이언트 소켓과 통신할 새로운 소켓을 생성
                 Socket socket = serverSocket.accept();
+                // getInetAddress() : 연결될 클라이언트의 IP주소를 받아온다.
                 System.out.println(getTime() + socket.getInetAddress() + "로부터 연결요청이 들어왔습니다.");
 
                 // 소켓의 출력스트림을 얻는다.
