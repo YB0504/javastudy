@@ -8,9 +8,11 @@ class ATM implements Runnable {
     }
 
     @Override
-    public void run() {
+    public void run() { // Thread를 실행하기 위해 오버라이딩하여 구현
+        // 한번에 하나의 Thread 만 실행 되도록 동기화
         synchronized (this) {
             for (int i = 0; i < 10; i++) {
+                // 대기 중인 스레드 Runnable(준비 상태)로 전환
                 notify();
                 try {
                     wait();

@@ -27,6 +27,6 @@ public class SingleThreadEx01 extends Thread {
 
     public static void main(String[] args) {
         SingleThreadEx01 singleThreadEx01 = new SingleThreadEx01("첫번째");
-        singleThreadEx01.start();
+        singleThreadEx01.start();   // run() 에 설정된 Thread가 Runnable 상태에 진입한다.
     }
 }
