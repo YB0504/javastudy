@@ -21,6 +21,7 @@ public class FutureEx02 {
         });
 
         System.out.println(LocalTime.now() + " Waiting the task done");
+        // 결과가 반환되기를 기다리면서 대기한다.
         Integer result = future.get();
         System.out.println(LocalTime.now() + "Result : " + result);
     }
